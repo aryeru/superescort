@@ -1,1 +1,107 @@
-body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; color: #333; } header { text-align: center; margin-bottom: 20px; } #searchInput { width: 80%; max-width: 400px; padding: 10px; font-size: 16px; } .professional-card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 15px; padding: 15px; display: flex; gap: 15px; align-items: center; } .professional-photo { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; } .professional-info { flex-grow: 1; } .professional-info h2 { margin: 0 0 5px 0; } .professional-info p { margin: 3px 0; font-size: 14px; color: #555; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /* anterior 20px */
+  background-color: #121212; /* anterior #f9f9f9 */
+  color: #e0e0e0; /* anterior #333 */
+}
+
+/* Encabezado sticky */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #1f1f1f; /* fondo oscuro un poco más claro */
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  /* margin-bottom: 20px; */
+  z-index: 1000;
+}
+
+/* Titulo principal */
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #ffcc00; /* color amarillo dorado */
+  user-select: none;
+}
+
+/* Barra de busqueda */
+#searchInput {
+  margint-op: 10px;
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border-radious: 20px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #eee;
+  box-shadow: inset 2px 2px 5px #000;
+  transition: background-color 0.3s ease;
+}
+#searchInput::placeholder {
+  color: #bbb;
+}
+#searchInput:focus {
+  background-color: #444;
+}
+
+/* Tarjetas de profesionales */
+.professional-card {
+  background: #1e1e1e; /* antes white */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+  /* margin-bottom: 15px; */
+  margin: 15px auto;
+  padding: 20px;
+  max-width: 700px; /* agrgado */
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.3s ease; /* agregado */
+}
+
+.professional-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(255, 204, 0, 0.7);
+}
+
+/* foto redonda */
+.professional-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffcc00;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Información del profesional */
+.professional-info {
+  flex-grow: 1;
+}
+.professional-info h2 {
+  margin: 0 0 8px 0;
+  color: #ffcc00;
+  font-size: 1.5rem;
+}
+.professional-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #ccc; /* antes #555 */
+}
+
+.professional-info p em {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Mensaje cuando no hay resultados */
+#professionalsList p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 40px;
+}
+
