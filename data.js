@@ -2,17 +2,17 @@ const professionals = [
 {
   "name": "Scarlet",
   "phone": "+34 600 123 456",
-  "services": "Diseño gráfico, Branding",
-  "zone": "Madrid",
+  "services": "Heroína, Fuerza y poder",
+  "zone": "USA",
   "photo": "images/scarlet_cara.jpg",
-  "review": "Profesional muy creativa y puntual."
+  "review": "Super heroína de Marvel, ha salvado muchas vidas."
 },
 {
-  "name": "Carlos Gómez",
+  "name": "Super Girl",
   "phone": "+34 600 654 321",
-  "services": "Desarrollo web, SEO",
-  "zone": "Barcelona",
-  "photo": "images/carlos-gomez.jpg",
-  "review": "Excelente atención y resultados."
+  "services": "Heroína, Periodista",
+  "zone": "USA",
+  "photo": "images/supergirl1_cara.jpg",
+  "review": "Super heroína de DC, ha salvado muchas vidas."
 } // Puedes agregar más profesionales aquí
 ];
