@@ -2,17 +2,17 @@ body {
   font-family: Arial, sans-serif;
   margin: 0; /* anterior 20px */
   background-color: #121212; /* anterior #f9f9f9 */
-  color: #f0e6f7; /* (#e0e0e0) anterior #333 */
+  color: #e0e0e0; /* anterior #333 */
 }
 
 /* Encabezado sticky */
 header {
   position: sticky;
   top: 0;
-  background-color: #2a0d1e; /* (#1f1f1f) fondo oscuro un poco más claro */
+  background-color: #1f1f1f; /* fondo oscuro un poco más claro */
   padding: 15px 20px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(42,13,30,0.8);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.7);
   /* margin-bottom: 20px; */
   z-index: 1000;
 }
@@ -21,7 +21,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 1.8rem;
-  color: #ff2d55; /* (#ffcc00 color amarillo dorado) */
+  color: #ffcc00; /* color amarillo dorado */
   user-select: none;
 }
 
@@ -35,25 +35,23 @@ header h1 {
   border-radious: 20px;
   border: none;
   outline: none;
-  background-color: #4a1a2a; /* antes #333 */
-  color: #f8d7f3; /* rosa claro */ /* antes #eee */
+  background-color: #333;
+  color: #eee;
   box-shadow: inset 2px 2px 5px #000;
   transition: background-color 0.3s ease;
 }
-
 #searchInput::placeholder {
-  color: #d8a9c9;
+  color: #bbb;
 }
-
 #searchInput:focus {
-  background-color: #6f2a4c;
+  background-color: #444;
 }
 
 /* Tarjetas de profesionales */
 .professional-card {
-  background: #2a0d1e; /* rojo oscuro */ /* antes #1e1e1e */ /* antes white */
+  background: #1e1e1e; /* antes white */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(42,13,30,0.8);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
   /* margin-bottom: 15px; */
   margin: 15px auto;
   padding: 20px;
@@ -66,7 +64,7 @@ header h1 {
 
 .professional-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 12px rgba(255, 45, 85, 0.8); /* fucsia vibrante */
+  box-shadow: 0 6px 12px rgba(255, 204, 0, 0.7);
 }
 
 /* foto redonda */
@@ -75,8 +73,8 @@ header h1 {
   height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ff2d55; /* fucsia */
-  box-shadow: 0 0 10px #ff2d55;
+  border: 3px solid #ffcc00;
+  box-shadow: 0 0 10px #ffcc00;
 }
 
 /* Información del profesional */
@@ -85,13 +83,13 @@ header h1 {
 }
 .professional-info h2 {
   margin: 0 0 8px 0;
-  color: #ff2d55; /* fucsia */
+  color: #ffcc00;
   font-size: 1.5rem;
 }
 .professional-info p {
   margin: 4px 0;
   font-size: 14px;
-  color: #e0b8d9; /* rosa claro */ /* antes #ccc */ /* antes #555 */
+  color: #ccc; /* antes #555 */
 }
 
 .professional-info p em {

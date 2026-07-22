@@ -5,7 +5,7 @@ const professionals = [
   "services": "Heroína, Fuerza y poder",
   "zone": "USA",
   "photo": "images/scarlet_cara.jpg",
-  "review": "Super heroína de Marvel, ha salvado muchas vidas.",
+  "review": "Super heroína de Marvel, ha salvado muchas vidas."
 },
 {
   "name": "Super Girl",
